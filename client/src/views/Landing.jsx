@@ -82,11 +82,9 @@ const features = [
 export default function Landing() {
     return (
         <div>
-
             <Navbar />
-            <div className="relative bg-gray-800 overflow-hidden">
+            <div className="relative bg-gray-800">
                 <div className="relative pt-6 pb-16 sm:pb-24">
-
                     <main className="mt-6">
                         <div className="mx-auto max-w-7xl">
                             <div className="lg:grid lg:grid-cols-12 lg:gap-8">
@@ -304,7 +302,7 @@ export default function Landing() {
                     </dl>
                 </div>
             </section>
-            
+
             <section>
                 <div className="py-12 bg-gray-800">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
