@@ -2,6 +2,7 @@
   "name": "project-portal",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "dependencies": {
     "@headlessui/react": "^1.4.3",
     "@heroicons/react": "^1.0.5",
