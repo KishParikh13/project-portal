@@ -15,6 +15,7 @@
   ```
 */
 import { LockClosedIcon } from '@heroicons/react/solid'
+import React from 'react';
 
 export default function Login() {
   const [data, setData] = React.useState(null);
@@ -23,7 +24,7 @@ export default function Login() {
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
-  
+
     return (
       <>
         {/*
@@ -34,10 +35,6 @@ export default function Login() {
           <body class="h-full">
           ```
         */}
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>{!data ? "Loading..." : data}</p>
-        </header>
         <div className="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
             <img
@@ -52,6 +49,7 @@ export default function Login() {
                 start your 14-day free trial
               </a>
             </p>
+            <p>{!data ? "Loading..." : data}</p>
           </div>
   
           <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
