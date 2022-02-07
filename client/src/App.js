@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import logo from './images/Logo.svg'
 import React from 'react';
 import Landing from './views/Landing';

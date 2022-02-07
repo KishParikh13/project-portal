@@ -16,6 +16,8 @@
 */
 import { LockClosedIcon } from '@heroicons/react/solid'
 import React from 'react';
+import Navbar from './shared/Navbar';
+import Footer from './shared/Footer'
 
 export default function Login() {
   const [data, setData] = React.useState(null);
@@ -27,32 +29,19 @@ export default function Login() {
 
     return (
       <>
-        {/*
-          This example requires updating your template:
-  
-          ```
-          <html class="h-full bg-gray-50">
-          <body class="h-full">
-          ```
-        */}
-        <div className="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+        <Navbar />
+        <div className="bg-gray-800 min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
-            <img
-              className="mx-auto h-12 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-              alt="Workflow"
-            />
-            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
-            <p className="mt-2 text-center text-sm text-gray-600">
+            <h2 className="text-center text-3xl font-extrabold text-white">Sign in to your account</h2>
+            <p className="mt-2 text-center text-sm text-gray-300">
               Or{' '}
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+              <a href="#" className="font-medium text-indigo-300 hover:text-indigo-400">
                 start your 14-day free trial
               </a>
             </p>
-            <p>{!data ? "Loading..." : data}</p>
           </div>
   
-          <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+          <div className="pt-8 pb-8 sm:mx-auto sm:w-full sm:max-w-md">
             <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
               <form className="space-y-6" action="#" method="POST">
                 <div>
